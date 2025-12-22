@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background-color: gray; /* Колір фону таблиці */
+        }
+
+        th, td {
+            padding: 10px;
+            border: 2px double black; /* Подвійна рамка */
+        }
+
+        th {
+            text-align: center; /* Вирівнювання заголовка по центру */
+        }
+
+        td:nth-child(1) {
+            width: 25%; /* 25% ширини таблиці */
+            text-align: left; /* Вирівнювання по лівому краю */
+        }
+
+        td:nth-child(2) {
+            width: 75%; /* 75% ширини таблиці */
+            text-align: right; /* Вирівнювання по правому краю */
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <tr>
+            <th colspan="2">Таблиця товарів</th>
+        </tr>
+        <tr>
+            <td>Авто</td>
+            <td>Мото</td>
+        </tr>
+        <tr>
+            <td>Honda Accord</td>
+            <td>Honda CBR 600F</td>
+        </tr>
+        <tr>
+            <td>Toyota Camry 70</td>
+            <td>Kawasaki Z900</td>
+        </tr>
+    </table>
+</body>
+</html>
+
+---------------------------------------------------------------
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        table {
+            background-color: gray; /* Колір фону таблиці */
+            border-collapse: collapse; /* Об'єднати границі комірок */
+            border: 2px double black; /* Подвійна рамка */
+            margin-left: auto; /* "Прижати" до правого боку вікна браузера */
+            margin-right: 0;
+        }
+        th, td {
+            padding: 10px; /* Відступ від границі комірки до вмісту */
+        }
+        td {
+            border-spacing: 3px; /* Відстань між комірками */
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <tr>
+            <td>КМ, ЛБ1 - 13:30 - 14:50</td>
+            <td>КМ, ЛБ2 - 13:30 - 14:50</td>
+        </tr>
+        <tr>
+            <td>КТтаП, ПЗ - 11:30 - 12:50 </td>
+            <td>ФізВих, ПЗ - 11:30 - 12:50</td>
+        </tr>
+        <tr>
+            <td>WEB-ДтаWEB-прог, Зал 16:30 - 17:50</td>
+            <td>ФізВих, Зал - 13:30 - 14:50</td>
+        </tr>
+    </table>
+</body>
+</html>
+
+
+----------------------------------------------------------
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background-color: gray; /* Колір фону таблиці */
+        }
+
+        th, td {
+            padding: 10px;
+            border: 2px double black; /* Подвійна рамка */
+            text-align: center; /* Вирівнювання по центру */
+            vertical-align: middle; /* Вирівнювання по середині вертикалі і горизонталі */
+        }
+
+        tr {
+            height: 3px; /* Відстань між комірками */
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <tr>
+            <td rowspan="2">Каталог</td>
+            <td>Погонних метрів, м</td>
+            <td>К-ть, шт</td>
+            <td>Вартість, грн</td>
+        </tr>
+        <tr>
+            <td colspan="3">В наявнсоті</td>
+        </tr>
+        <tr>
+            <td>Дуб</td>
+            <td>5,5</td>
+            <td>21</td>
+            <td>200</td>
+        </tr>
+        <tr>
+            <td>Сосна</td>
+            <td>6,5</td>
+            <td>14</td>
+            <td>300</td>
+        </tr>
+    </table>
+</body>
+</html>
+
+----------------------------------------------------------------------
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+<table border="1" cellpadding="5" cellspacing="0">
+	<tr>
+		<td colspan="2" rowspan="2">&nbsp;</td>
+		<th colspan="2">Характеристики</th>
+	</tr>
+	<tr>
+		<td>Кількість студетів </td>
+		<td>Якість успішності</td>
+	</tr>
+	<tr align="center">
+		<td rowspan="3">Спеціальність</td>
+		<td>Економічна кібернетика</td>
+		<td>250</td>
+		<td>80%</td>
+	</tr>
+<tr align="center">
+		<td>Прикладна математика</td>
+		<td>200</td>
+		<td>75%</td>
+</tr>
+<tr align="center">
+		<td>Менеджмент</td>
+		<td>150</td>
+		<td>85%</td>
+</tr>
+
+</table>
+</body>
+</html>
+
+
+--------------------------------------------------------------------------------
+
+<form accept="#">
+				<label>Прізвище</label>
+				<br><br>
+				<input type="text" name="surname">
+				<br><br>
+				<label>Ім'я</label>
+				<br><br>
+				<input type="text" name="name">
+				<br><br>
+				<h3>Навчальна група</h3>
+				<br>
+				 <select name="grup">
+                    <option>301-ТН</option>
+                    <option>302-ТН</option>
+                    <option>303-ТН</option>
+                    <option>304-ТН</option>
+                    <option>305-ТН</option>
+                </select>
+				<br><br>
+				<label>Пароль</label>
+				<br><br>
+				<input type="text" name="Password">
+				<br><br>
+				<label>Підтвердження паролю</label>
+				<br><br>
+				<input type="text" name="PasswordApply">
+				<br><br>
+				 <input type="submit" value="Зареєструватися">
+			</form>
